@@ -21,7 +21,7 @@ function PostsList({ isPosting, onCloseModal }) {
       <ul className={classes.posts}>
         {[
           posts.map((element) => (
-            <Post author={element.author} body={element.body} />
+            <Post key={Post.body} author={element.author} body={element.body} />
           )),
         ]}
       </ul>
