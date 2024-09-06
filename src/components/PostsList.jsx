@@ -8,7 +8,6 @@ function PostsList() {
   const [isFetching, setIsFetching] = useState();
 
   useEffect(() => {
-    console.log("HIHI");
     async function fetchPosts() {
       setIsFetching(true);
       const response = await fetch("http://localhost:8080/posts/");
@@ -36,7 +35,7 @@ function PostsList() {
       {!isFetching && posts.length > 0 && (
         <ul className={classes.posts}>
           {[
-            posts.map((element) => ( 
+            posts.map((element) => (
               <Post
                 key={element.body}
                 author={element.author}
@@ -45,7 +44,7 @@ function PostsList() {
             )),
           ]}
         </ul>
-      )} 
+      )}
       {!isFetching && posts.length === 0 && (
         <div style={{ textAlign: "center", color: "white" }}>
           <h2>There are no posts yet.</h2>
