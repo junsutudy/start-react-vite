@@ -1,4 +1,4 @@
-import Modal from "./Modal";
+import Modal from "../components/Modal";
 import classes from "./NewPost.module.css";
 import { useState } from "react";
 
