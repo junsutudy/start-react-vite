@@ -13,6 +13,7 @@ function PostsList() {
             posts.map((element) => (
               <Post
                 key={element.body}
+                id={element.id}
                 author={element.author}
                 body={element.body}
               />
