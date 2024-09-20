@@ -12,18 +12,13 @@ function NewPost() {
         </p>
         <p>
           <label htmlFor="name">Your name</label>
-          <input
-            type="text"
-            id="author"
-            required
-            onChange={authorChangeHandler}
-          />
+          <input type="text" id="author" name="author" />
         </p>
         <p className={classes.actions}>
           <Link to=".." type="button">
             Cancel
           </Link>
-          <button onClick={submitHandler}>Submit</button>
+          <button>Submit</button>
         </p>
       </Form>
     </Modal>
