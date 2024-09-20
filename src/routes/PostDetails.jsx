@@ -25,7 +25,7 @@ function PostDetails() {
     <Modal>
       <main className={classes.details}>
         <p className={classes.author}>{post.author}</p>
-        <p className={classes.text}>{post.text}</p>
+        <p className={classes.text}>{post.body}</p>
       </main>
     </Modal>
   );
